@@ -42,11 +42,11 @@ export function Header({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
             ? (
               <div className="user-info">
                 <span className="welcome">
-                    Welcome,
-                    {' '}
+                  Welcome,
+                  {' '}
                   <b>{user.name}</b>
-                    !
-</span>
+                  !
+                </span>
                 <Button size="small" onClick={onLogout} label="Log out" />
               </div>
             )

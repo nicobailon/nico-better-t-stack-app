@@ -1,3 +1,5 @@
+import antfu from '@antfu/eslint-config'
+
 export default antfu(
   {
     // ... antfu options ...
@@ -41,10 +43,10 @@ export default antfu(
           'JSXEmptyExpression',
           'JSXSpreadChild',
           'TemplateLiteral',
-          'TSTypeParameterInstantiation'
-        ]
-      }]
+          'TSTypeParameterInstantiation',
+        ],
+      }],
     },
   },
   // ... rest of the configuration ...
-) 
+)

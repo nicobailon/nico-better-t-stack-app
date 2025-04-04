@@ -13,7 +13,7 @@ export default antfu(
     },
     ignores: [
       '/dist/',
-      '/*.gen.ts',
+      '**/*.gen.ts',
       '/node_modules/',
       '/.turbo/',
       '/.roomodes/',

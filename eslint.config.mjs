@@ -1,4 +1,5 @@
 import antfu from '@antfu/eslint-config'
+import stylistic from '@stylistic/eslint-plugin'
 import tailwind from 'eslint-plugin-tailwindcss'
 
 export default antfu(
@@ -7,7 +8,8 @@ export default antfu(
     typescript: true,
     // Removed the semicolon option as it might not be a valid option
     plugins: {
-      tailwindcss: tailwind,
+      'tailwindcss': tailwind,
+      '@stylistic': stylistic,
     },
     ignores: [
       '/dist/',
@@ -28,7 +30,7 @@ export default antfu(
       'style/semi': 'off',
       'semi': 'off',
       'indent': 'off',
-      '@typescript-eslint/indent': ['error', 2, {
+      '@stylistic/indent': ['error', 2, {
         SwitchCase: 1,
         VariableDeclarator: 1,
         outerIIFEBody: 1,
@@ -59,10 +61,10 @@ export default antfu(
           'JSXEmptyExpression',
           'JSXSpreadChild',
           'TemplateLiteral',
-          'TSTypeParameterInstantiation'
-        ]
-      }]
-    }
+          'TSTypeParameterInstantiation',
+        ],
+      }],
+    },
   },
   {
     files: ['apps/web/**/*.{ts,tsx}'],
@@ -86,7 +88,7 @@ export default antfu(
     files: ['**/eslint.config.mjs'],
     rules: {
       'semi': ['error', 'never'],
-      'style/semi': ['error', 'never']
-    }
-  }
+      'style/semi': ['error', 'never'],
+    },
+  },
 )

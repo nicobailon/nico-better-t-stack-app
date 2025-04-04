@@ -1,0 +1,36 @@
+{
+  "name": "nico-better-t-stack-app",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "packageManager": "npm@11.2.0",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "check-types": "turbo check-types",
+    "dev:native": "turbo -F native dev",
+    "dev:web": "turbo -F web dev",
+    "dev:server": "turbo -F server dev",
+    "db:push": "turbo -F server db:push",
+    "db:studio": "turbo -F server db:studio",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "4.11.0",
+    "@typescript-eslint/eslint-plugin": "8.29.0",
+    "@typescript-eslint/parser": "8.29.0",
+    "eslint": "9.23.0",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "eslint-plugin-tailwindcss": "3.18.0",
+    "husky": "9.1.7",
+    "lint-staged": "15.5.0",
+    "turbo": "^2.4.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs,cjs}": ["eslint --fix --no-error-on-unmatched-pattern"]
+  }
+}

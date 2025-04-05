@@ -36,5 +36,9 @@
     "*.{js,jsx,ts,tsx,mjs,cjs}": [
       "eslint --fix --no-error-on-unmatched-pattern"
     ]
+  },
+  "dependencies": {
+    "@types/lodash.debounce": "^4.0.9",
+    "lodash.debounce": "^4.0.8"
   }
 }

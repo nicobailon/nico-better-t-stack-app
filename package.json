@@ -18,6 +18,10 @@
     "lint:fix": "eslint . --fix",
     "prepare": "husky"
   },
+  "dependencies": {
+    "@types/lodash.debounce": "^4.0.9",
+    "lodash.debounce": "^4.0.8"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "4.11.0",
     "@stylistic/eslint-plugin": "^4.2.0",

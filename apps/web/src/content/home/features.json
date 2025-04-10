@@ -1,0 +1,29 @@
+{
+  "title": "Key Features",
+  "subtitle": "Why Choose Our Platform",
+  "description": "Our platform offers a comprehensive set of features designed to help you build better web experiences.",
+  "features": [
+    {
+      "title": "Type-Safe API",
+      "description": "End-to-end type safety with tRPC ensures your API calls are always validated.",
+      "icon": "code"
+    },
+    {
+      "title": "Modern React",
+      "description": "Built with TanStack Router and TanStack Query for optimal performance and developer experience.",
+      "icon": "react"
+    },
+    {
+      "title": "Fast Backend",
+      "description": "Lightweight Hono server delivers blazing-fast API responses with minimal overhead.",
+      "icon": "server"
+    },
+    {
+      "title": "Beautiful UI",
+      "description": "TailwindCSS combined with shadcn/ui components for a polished, accessible interface.",
+      "icon": "palette"
+    }
+  ],
+  "ctaText": "Explore Documentation",
+  "ctaLink": "/docs"
+}

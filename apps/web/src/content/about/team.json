@@ -1,0 +1,50 @@
+{
+  "title": "Our Team",
+  "subtitle": "Meet the people behind the platform",
+  "description": "Our diverse team of experts is passionate about creating the best web development tools and experiences.",
+  "team": [
+    {
+      "name": "Jane Doe",
+      "role": "Founder & CEO",
+      "bio": "With over 15 years of experience in web development, Jane leads our vision and strategy.",
+      "imageUrl": "/images/team/jane-doe.jpg",
+      "socialLinks": {
+        "twitter": "https://twitter.com/janedoe",
+        "github": "https://github.com/janedoe",
+        "linkedin": "https://linkedin.com/in/janedoe"
+      }
+    },
+    {
+      "name": "John Smith",
+      "role": "CTO",
+      "bio": "John brings deep technical expertise and leads our engineering team in building robust, scalable solutions.",
+      "imageUrl": "/images/team/john-smith.jpg",
+      "socialLinks": {
+        "twitter": "https://twitter.com/johnsmith",
+        "github": "https://github.com/johnsmith",
+        "linkedin": "https://linkedin.com/in/johnsmith"
+      }
+    },
+    {
+      "name": "Alice Johnson",
+      "role": "Lead Designer",
+      "bio": "Alice is passionate about creating beautiful, intuitive user interfaces and experiences.",
+      "imageUrl": "/images/team/alice-johnson.jpg",
+      "socialLinks": {
+        "twitter": "https://twitter.com/alicejohnson",
+        "dribbble": "https://dribbble.com/alicejohnson",
+        "linkedin": "https://linkedin.com/in/alicejohnson"
+      }
+    },
+    {
+      "name": "Bob Brown",
+      "role": "Senior Developer",
+      "bio": "Bob specializes in performance optimization and ensuring our platform runs smoothly.",
+      "imageUrl": "/images/team/bob-brown.jpg",
+      "socialLinks": {
+        "github": "https://github.com/bobbrown",
+        "linkedin": "https://linkedin.com/in/bobbrown"
+      }
+    }
+  ]
+}

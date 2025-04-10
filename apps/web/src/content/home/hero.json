@@ -1,0 +1,25 @@
+{
+  "title": "Build Better Web Experiences",
+  "subtitle": "Modern, accessible, and performant web applications",
+  "description": "Our T-stack approach combines the best tools in the ecosystem to create amazing digital experiences that your users will love.",
+  "ctaPrimary": {
+    "text": "Get Started",
+    "href": "/docs"
+  },
+  "ctaSecondary": {
+    "text": "View Demo",
+    "href": "/demo"
+  },
+  "backgroundGradient": {
+    "from": "indigo",
+    "to": "purple",
+    "opacity": 0.6
+  },
+  "animationSettings": {
+    "speed": "normal",
+    "pattern": "wave",
+    "intensity": 0.5
+  },
+  "imageUrl": "/images/hero-graphic.png",
+  "imageAlt": "Abstract representation of web components"
+}

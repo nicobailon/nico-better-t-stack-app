@@ -15,6 +15,7 @@ function HomeComponent() {
   const healthCheck = useQuery(trpc.healthCheck.queryOptions())
   const [heroContent, setHeroContent] = useState<HeroContent | null>(null)
   const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   // Load hero content from our content system
   useEffect(() => {
@@ -24,8 +25,9 @@ function HomeComponent() {
         const content = await loadHeroContent()
         setHeroContent(content)
       }
-      catch (error) {
-        console.error('Failed to load hero content:', error)
+      catch (err) {
+        console.error('Failed to load hero content:', err)
+        setError(err instanceof Error ? err.message : 'Failed to load content')
       }
       finally {
         setIsLoading(false)
@@ -39,7 +41,24 @@ function HomeComponent() {
     <div>
       {/* Main Hero Section with Content System */}
       <div className="relative z-[2] flex">
-        <Hero content={heroContent} isLoading={isLoading} />
+        {error
+          ? (
+          <div className="container mx-auto text-center p-10">
+            <div className="bg-red-50 border border-red-200 rounded-lg p-6 max-w-2xl mx-auto">
+              <h2 className="text-red-600 text-xl font-medium mb-2">Failed to load content</h2>
+              <p className="text-red-700">{error}</p>
+              <button
+                className="mt-4 px-4 py-2 bg-red-100 hover:bg-red-200 text-red-700 rounded-md transition"
+                onClick={() => window.location.reload()}
+              >
+                Retry
+              </button>
+            </div>
+          </div>
+          )
+          : (
+          <Hero content={heroContent} isLoading={isLoading} />
+          )}
       </div>
 
       {/* Original Content Below */}

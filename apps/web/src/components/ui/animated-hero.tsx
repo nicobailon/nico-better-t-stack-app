@@ -15,7 +15,7 @@ function Hero({ content, isLoading = false }: HeroProps) {
   // Default animation titles or use content from the JSON
   const titles = useMemo(
     () =>
-      content?.subtitle.split(' ')
+      content?.subtitle?.split(' ')
       || ['amazing', 'new', 'wonderful', 'beautiful', 'smart'],
     [content?.subtitle],
   );
@@ -86,7 +86,7 @@ function Hero({ content, isLoading = false }: HeroProps) {
                 &nbsp;
                 {titles.map((title, index) => (
                   <motion.span
-                    key={title}
+                    key={index}
                     className="absolute font-semibold"
                     initial={{ opacity: 0, y: '-100' }}
                     transition={{
@@ -120,7 +120,7 @@ function Hero({ content, isLoading = false }: HeroProps) {
           </div>
           <div className="flex flex-row gap-3">
             <Button size="lg" className="gap-4" variant="outline">
-              {content?.ctaSecondary.text || 'Jump on a call'}
+              Jump on a call
 {' '}
 <PhoneCall className="w-4 h-4" />
             </Button>
